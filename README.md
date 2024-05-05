@@ -269,32 +269,28 @@ Si hay otros errores:
 -Si es el mismo ISIN, abre de nuevo la proxima 'Nueva Operacion' y procede de la misma forma.
 -Si es otro ISIN, en CARTERA haz clik en 'Listado de valores' y busca el nuevo valor o crealo.
 
-
-=======================
 6.0 LIMITACIONES Y TRUCOS
-=======================
 Por ahora el programa introduce unicamente las operaciones de ADQUISICION y TRANSMISION. Estoy programando para ampliar a Acciones liberadas, etc.
 
-----------------
-
-Cuando vas a iniciar el volcado de datos en la ficha 'Nueva Operacion' y has situado el mouse en el primer campo 'Tipo de Operacion' no puedes mover mas el mouse hasta que haya introducido todos los datos y llegue a 'GUARDAR'. Si lo haces el programa aborta. Queda a la espera de repetir la operacion. Es una medida de seguridad.
+6.1.Cuando vas a iniciar el volcado de datos en la ficha 'Nueva Operacion' y has situado el mouse en el primer campo 'Tipo de Operacion' no puedes mover mas el mouse hasta que haya introducido todos los datos y llegue a 'GUARDAR'. Si lo haces el programa aborta. Queda a la espera de repetir la operacion. Es una medida de seguridad.
 Y es muy util: Si por exceso de velocidad el volcado de datos 'enloquece' y saltan pantallas que no deben, etc, moviendo  el mouse abortas el proceso. Ahora puedes limpiar la ficha, disminuir la velocidad con el boton '+Lento' y volver a rellenar la ficha.
------------------------
-Por razone que desconozco el programa CARTERA acepta la fecha con facilidad pero anula sistematicamente la hora y la deja a 0:00:00.
+
+6.2 Por razone que desconozco el programa CARTERA acepta la fecha con facilidad pero anula sistematicamente la hora y la deja a 0:00:00.
 Esto es pesimo: sin la hora, las fichas introducidas seran ordenadas como a CARTERA le parezca. Pondra TRANSMISIONES delante de ADQUISICIONES, provocando un error a la hora de guardar el movimiento: IMPOSIBLE VENDER LO QUE NO TENIAS.
 La solucion que he encontrado es introducir fecha y hora, saltar de campo, volver a fecha y hora, limpiar, introducirla de nuevo. En mi trabajo --ya he introducido todos mis movimientos-- la segunda vez acepta la hora correctamente.
-Si en tu trabajo aun asi no acepta la hora, he puesto en tu CLIPBOARD la fecha y hora por lo que si limpias el campo y aplicas 'Ctrl V' tendras fecha y hora introducidas. Suerte.
----------
-Socorro: he apretado el boton 'introducir...' pero me he olvidado de abrir la ficha en CARTERA.... 
+Si en tu trabajo aun asi no acepta la hora, he puesto en tu CLIPBOARD la fecha y hora por lo que si limpias el campo y aplicas 'Ctrl V' tendras fecha y hora introducidas. Suerte
+
+
+6.3 Socorro: he apretado el boton 'introducir...' pero me he olvidado de abrir la ficha en CARTERA.... 
 No, no te dara tiempo a abrirla. Hay que abrirla antes y solo despues hacer clik en el boton 'INTRODUCIR' e ir al primer campo. 
 Que hacer???? 
 Si llevas el  mouse al terreno del browser, AEC.CMD intentara introducir datos, abriendo ventanas inconvenientes. Pero si vas moviendo el mouse, en seguida para y aborta. Haz click en el browser y va moviendo el mouse.
 Si no has salido de la VENTANA DE DATOS todavia, no subas el mouse. Dirigelo por abajo hacia la derecha al maximo, al final sube hacia la VENTANA PERL, haz click, Ctrl C y el programa se parara. Aunque hagas clik en el boton introducir, mientras no penetres en el terreno del browser no introducira datos.
-----------------------------
 
-==================
+
+
 7.0 DESINSTALACION
-==================
+
 Recuerdo que en realida el programa no se instala. Si no lo quieres mas, simplemente borra directorios que has creado (c:\p\ en nuestro ejemplo). En tu computador no quedara nada mas.
 
 
