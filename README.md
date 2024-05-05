@@ -21,12 +21,9 @@ AVISO: hay un cierto esfuerzo previo para prepararlo y aprender a usarlo pero de
 
 SEGURIDAD: AEC.CMD es un script: no tiene archivos compilados ni ejecutables. Lo puedes leer como cualquier texto. Tampoco baja datos ni se conecta a ninguna parte. Simplemente capta los datos que tu le proporcionas mediante el archivo CSV y los vuelca en los campos correspondientes del programa CARTERA. Cualquier persona que sepa PERL puede leerlo y confirmarlo.
 
-============
 1.0 INSTALACION
-============
-=========
+
 1.1 PERL
-=========
 
 Necesitas tener PERL en tu computador. Si ya lo tienes pasa a la siguiente fase (1.2 MODULOS).
 
@@ -36,9 +33,8 @@ https://strawberryperl.com/releases.html
 
 Elije preferentemente la ultima version (5.38.2.2). Elige 32bit o 64bit segun tu computador (cuanto mas moderno, mas probable que sea 64bit).
 
-============
 1.2 MODULOS
-==========
+
 Debes crear un directorio nuevo (ejemplo C:\P\ o D:\PL\ o C:\PERL\). Es importante que este vacio. Dentro extrae todo el contenido del zip que has bajado que sera probablemente: strawberry-perl-5.38.2.2-64bit-portable.zip.
 
 Veras varios subdirectorios. Tu tienes que crear otro nuevo (C:\P\AE, por ejemplo).
@@ -84,9 +80,8 @@ Y para cerrar la VENTANA PERL de nuevo:
 
 exit<enter>
 
-===========
 2.0 TUS DATOS DE DEGIRO
-===========
+
 El programa AEC.CMD lee exclusivamente los registros de tus operaciones tal como los emite DEGIRO.
 Para obtenerlos entra en tu aplicacion DEGIRO, seccion buzon, seccion transacciones.
 
@@ -108,22 +103,23 @@ Pon este archivo (Transactions.csv) en el directorio donde esta el programa AEC.
 
 IMPORTANTE: el archivo, para ser reconocido tiene que llamarse 'deg.csv'. Renombra Transactions.csv para DEG.CSV.
 
-===========
 3.0 PUESTA EN MARCHA: VENTANAS
-===========
 
 Para trabajar comodamente necesitas 3 ventanas al mismo tiempo (vease la foto aec.pl.jpg):
 
---Abre tu navegador (he experimentado con EDGE y FIREFOX) , entra en el sitio de la AEAT, reducelo para que quede arriba a la izquierda y deje 4 dedos a la derecha y 2 dedos abajo.
+Abre tu navegador (he experimentado con EDGE y FIREFOX) , entra en el sitio de la AEAT, reducelo para que quede arriba a la izquierda y deje 4 dedos a la derecha y 2 dedos abajo.
 
---Abre el link:
+Abre el link:
 
 portableshell.bat
 
 que tienes en la raiz de la instalacion de PERL. Se abre la VENTANA PERL. Colocala a la derecha y reducela para que se encaje en los 4 dedos que le hemos reservado. Asi no se superpone con el navegador. Podras pasar de una a otra sin que se minimicen ni desaparezcan. 
 Si te agrada, puedes ampliar la letra de la VENTANA PERL para ver mejor los datos. 
-En el encabezamiento de la patalla haz clik para ir a >propiedades
+En el encabezamiento de la patalla haz clik para ir a 
+
+>propiedades
 >fuentemd
+
 Para mi gusto, la fuente 20 esta bien.
 Salva.
 
@@ -146,26 +142,19 @@ Ya tenemos las tres ventanas en su posicion.
 
 IMPORTANTE: Las proximas veces que inicies el programa, si el archivo DEG12.CSV ya se encuentra junto al programa AEC.CMD, se saltara la fase que hemos visto, creara la VENTANA DE DATOS e ira directamente al primer registro. Sera mucho mas rapido, instantaneo.
 
-==========
 3.1 VENTANA DE DATOS
-==========
 Observa la ventana de abajo, VENTANA DE DATOS:
 
---------------
-3.1.2 Botones:
---------------
+3.1.1 Botones:
 
 'Prox Registro' 
 	Presionando este boton cargara el siguiente registro.
 
-
 'INTROD: press+Raton 1er Box' 
 	Presionalo y delplaza el mouse para el 1er campo de la ficha. Abandona el mouse. AEC va a rellenar uno por uno los campos. Mas detalles abajo.
 
-
 'Prev Record'
   Retrocede al registro previo (si lo hubiere).
-
 
 'Introd ISIN y NOMBRE'
 	Introduce los dos valores en la ficha correspondiente del programa CARTERA.
@@ -176,24 +165,20 @@ Observa la ventana de abajo, VENTANA DE DATOS:
 '+Rapido' '+Lento'
 	Dependiendo de tu conexion, es importante acelerar o decelerar la velocidad con que AEC.CMD introduce los datos. Empezara un poco lento, por prudencia. Si te funciona bien en una ficha, acelera un poco para la proxima y verifica el resultado. Si te da algun problema (mete mal los datos), desacelera, limpia la ficha abierta en CARTERA e INTRODUCE de nuevo.
 
-
 'Ir al Registro >>'
 	Si colocas en el campo al lado el numero de registro al que quieres ir y presionas 'Ir al Registro', va directo a este registro.
-
 
 'Avanza +10 Regs' '+50 Regs' '-10 Regs'
 	El programa, al reiniciarse, va al registro 1. Con los botones puedes avanzar o retrocecer hasta el registro que quieres procesar.
 
-
 'TOTAL'
-  Si introduces el numero de acciones que tenias el pasado ano, te mostrara los movimientos del valor en foco en este ano y sus respectivos totales, segun compres o vendas en cada operacion. 
+  Si introduces el numero de acciones que tenias el 31/12 anterior te mostrara las adquisiciones o transmiones del valor en foco sus respectivos totales. Muy util para compararlos con los que tiene CARTERA DE VALORES. 
 
 'SALIR'
 	Sale del programa.
 
--------------------------
+
 3.1.3.Textos: significado
--------------------------
 
 En el texto principal (letras mayores) te aparecen los datos del Registro que vas a introducir:
 
@@ -212,9 +197,9 @@ En el texto principal (letras mayores) te aparecen los datos del Registro que va
 
 En la linea secundaria, arriba, en letra menor, aparecen los datos de Registro previo, la anterior ficha que el programa ha cargado. Es util para salir de dudas si no hemos saltado algun registro (en los intradias a veces te queda duda). La fecha y hora son vitales para no perderse.
 
-================================
+
 4.0 MODOS DE SALIR DEL PROGRAMA
-================================
+
 Para salir del programa lo ideal es hacer clik en el boton 'SALIR'.Esto es muy rapido. La VENTANA DE DATOS desaparece, pero la VENTANA PERL continua en su lugar.
 
 Tecleando (o, muy comodamente, con la flecha superior te vuelve aparecer la orden):
@@ -229,9 +214,8 @@ ctrl C
 
 
 
-================================================
 5.0 TRABAJANDO EN EL PROGRAMA CARTERA DE VALORES
-================================================
+
 RECORDANDO
 
 Crea la VENTANA PERL partiendo del link:
@@ -251,7 +235,7 @@ Redimensiona tu NAVEGADOR y entra en la AEAT, en el programa CARTERA DE VALORES.
 
 Localiza el valor que quieres introducir (ejemplo Pharmamar).
 
---Si el valor todavia no existe:
+Si el valor todavia no existe:
 
 1) Abre la ficha NUEVO VALOR. Tiene tres posibles campos (NIF,ISIN,NOMBRE) pero solo dos son necesarios -Degiro proporciona los dos ultimos. 
 2) Ve a VENTANA DATOS, haz clik en el boton 'Introd ISIN y NOMBRE'
