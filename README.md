@@ -211,6 +211,8 @@ Si la ejecutas, vuelve a cargarse la VENTANA DE DATOS, en el ultimo registro vis
 Tambien se puede salir desde la VENTANA PERL:
 
 ctrl C
+s<enter>
+
 
 
 
@@ -222,7 +224,7 @@ Crea la VENTANA PERL partiendo del link:
 
 portableshell.bat<enter>
 
-Redimensionala (4 dedos de ancha) y ponla a la derecha. 
+Redimensionala (4 dedos de ancha) y ponla arriba a la derecha. 
 
 Introduce:
 
@@ -235,39 +237,34 @@ Redimensiona tu NAVEGADOR y entra en la AEAT, en el programa CARTERA DE VALORES.
 
 Localiza el valor que quieres introducir (ejemplo Pharmamar).
 
-Si el valor todavia no existe:
+5.1 Si el valor todavia no existe:
 
-1) Abre la ficha NUEVO VALOR. Tiene tres posibles campos (NIF,ISIN,NOMBRE) pero solo dos son necesarios -Degiro proporciona los dos ultimos. 
-2) Ve a VENTANA DATOS, haz clik en el boton 'Introd ISIN y NOMBRE'
-3) Vuelve a tu NAVEGADOR y lleva el mouse dentro del campo ISIN. No lo muevas mas. AEC.COM introducira sucesivamente el ISIN y NOMBRE. Y se PARARA.
-4) Verifica si esta correcto y aprieta GUARDAR en la ficha de CARTERA.
-5) Todavia en CARTERA presiona en AGRUPACIONES. Crea una e introduce el % que sea de tu propiedad.
+5.1.1) Abre la ficha NUEVO VALOR. Tiene tres posibles campos (NIF,ISIN,NOMBRE) pero solo dos son necesarios -Degiro proporciona los dos ultimos. 
+5.1.2 Ve a VENTANA DATOS, haz clik en el boton 'Introd ISIN y NOMBRE'
+5.1.3 Vuelve a tu NAVEGADOR y lleva el mouse dentro del campo ISIN. No lo muevas mas. AEC.COM introducira sucesivamente el ISIN y NOMBRE. Y se PARARA.
+5.1.4 Verifica si esta correcto y aprieta GUARDAR en la ficha de CARTERA.
+5.1.5 Todavia en CARTERA presiona en AGRUPACIONES. Crea una e introduce el % que sea de tu propiedad.
 
---Si el valor ya existe o lo acabas de crear:
+5.2 Si el valor ya existe o lo acabas de crear:
 
-1) En CARTERA abre la agrupacion donde quieres introducir la nueva operacion.
-2) Ve abajo al final de las operaciones  (usa la tecla FIN de tu teclado) haz clik en '+NUEVA OPERACION'. 
-3) Acomoda la ficha para que veas sus 7 u 8 campos comodamente. En EDGE puedes usar el ZOOM para reducir un tanto la pantalla (75% suele ser optima).
-4) Ahora ve a VENTANA DATOS y presiona el boton 'INTROD: Press+Rato 1er.Box'
-5) Desplaza el mouse hasta dentro del primer campo (TIPO DE OPERACION) y no lo muevas mas. AEC.CMD introducira: adquisicion o transmision, fecha y hora, clave de mercado, (si es transmision, clave de origen), numero de titulos, importe, nominal unitario y gastos.
-Al final saltara hasta GUARDAR y se parara.
-6) Verifica que los datos esten correctos:
-
----Si no estan correctos:
--Si lo unico incorrecto es la hora, limpia esa casilla y con 'Ctrl V' introduces de nuevo la Fecha y la hora. Tu clipboard esta con la fecha y hora facilitarte el trabajo.
-
-Si hay otros errores:
--en CARTERA haz clik en 'limpiar'. Esto elimina los datos.
--en la VENTANA DATOS disminuye la velocidad un poco con el boton '+Lento'
--Ve al punto 4 para volver a introducir los datos.
-
-
----Si la ficha ha sido introducida correctamente:
--Salva esa ficha en el programa CARTERA haciendo clik en 'GUARDAR'
--CARTERA te devuelve a la primera ficha de la agrupacion que has abierto. Usa la tecla FIN para ir al final. Ahi debe estar el REGISTRO que acabas de introducir.
--En VENTANA DATOS aprieta el boton 'Next Record'. Se carga el siguiente registro.
--Si es el mismo ISIN, abre de nuevo la proxima 'Nueva Operacion' y procede de la misma forma.
--Si es otro ISIN, en CARTERA haz clik en 'Listado de valores' y busca el nuevo valor o crealo.
+5.2.1 En CARTERA abre la AGRUPACION donde quieres introducir la nueva operacion.
+5.2.2 Ve abajo al final de las operaciones  (usa la tecla FIN de tu teclado) haz clik en '+NUEVA OPERACION'. 
+5.2.3 Acomoda la ficha para que veas sus 7 u 8 campos comodamente. En EDGE puedes usar el ZOOM para reducir un tanto la pantalla (75% suele ser optima).
+5.2.4 Ahora ve a VENTANA DATOS y presiona el boton 'INTROD: Press+Rato 1er.Box' y acto continuo desplaza el mouse por el Browser hasta dentro del primer campo (TIPO DE OPERACION) y no lo muevas mas. AEC.CMD introducira, saltando de campo en campo: Adquisicion o Transmision, Fecha y Hora, Clave de mercado, (si es transmision, Clave de origen), Numero de titulos, Importe, Nominal unitario y Gastos. Hecho esto salta hasta GUARDAR y se para.
+5.2.5 Atencion: esta operacion aun no esta guardada. Si la abandonas sera como si no existiese.
+5.2.6 Ahora tu puedes verificar que los datos estan correctos:
+      5.2.6.1 Si no estan correctos:
+	5.2.6.1.1 Si lo unico incorrecto es la hora, limpia esa casilla y con 'Ctrl V' introduces de nuevo la Fecha y la hora. AEC ha colocado en tu clipboard la 		fecha y hora de esta operacion para facilitarte el trabajo.
+	5.2.6.1.2 Si hay otros errores:
+	En CARTERA haz clik en 'limpiar'. Esto elimina los datos.
+	En la VENTANA DATOS disminuye la velocidad un poco con el boton '+Lento'
+	Ve al punto 5.2.4 para volver a introducir los datos de nuevo. Es bueno recordar que mientras no se ha presionado GUARDAR los posibles errores no quedan 	registrados en la AEAT.
+      5.2.6.2 Si la ficha ha sido introducida correctamente:
+  Salva esa ficha en el programa CARTERA haciendo clik en 'GUARDAR'
+  CARTERA te devuelve a la primera ficha de la agrupacion que has abierto. Usa la tecla FIN para ir al final. Ahi debe estar la operacion que acabas de introducir.
+  En VENTANA DATOS aprieta el boton 'Prox Registro'. Se carga el siguiente registro.
+  Verifica si es el mismo ISIN. Si lo es, en CARTERA abre otra 'Nueva Operacion' y procede como en el punto 5.2.4 de la misma forma.
+  Si es otro ISIN, en CARTERA haz clik en 'Listado de valores' y busca el nuevo valor o crealo.
 
 6.0 LIMITACIONES Y TRUCOS
 Por ahora el programa introduce unicamente las operaciones de ADQUISICION y TRANSMISION. Estoy programando para ampliar a Acciones liberadas, etc.
