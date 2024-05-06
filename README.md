@@ -269,20 +269,22 @@ Localiza el valor que quieres introducir (ejemplo Pharmamar).
 6.0 LIMITACIONES Y TRUCOS
 Por ahora el programa introduce unicamente las operaciones de ADQUISICION y TRANSMISION. Estoy programando para ampliar a Acciones liberadas, etc.
 
-6.1.Cuando vas a iniciar el volcado de datos en la ficha 'Nueva Operacion' y has situado el mouse en el primer campo 'Tipo de Operacion' no puedes mover mas el mouse hasta que haya introducido todos los datos y llegue a 'GUARDAR'. Si lo haces el programa aborta. Queda a la espera de repetir la operacion. Es una medida de seguridad.
-Y es muy util: Si por exceso de velocidad el volcado de datos 'enloquece' y saltan pantallas que no deben, etc, moviendo  el mouse abortas el proceso. Ahora puedes limpiar la ficha, disminuir la velocidad con el boton '+Lento' y volver a rellenar la ficha.
+6.1.Cuando vas a iniciar el volcado de datos en la ficha 'Nueva Operacion' y has situado el mouse en el primer campo 'Tipo de Operacion' no puedes mover mas el mouse hasta que haya introducido todos los datos y llegue a 'GUARDAR'. Si lo mueves el programa aborta. Queda a la espera de repetir la operacion. Es una medida de seguridad. Y es util: Si por exceso de velocidad el volcado de datos 'enloquece' y saltan pantallas que no deben, etc, moviendo  el mouse abortas el proceso. Ahora puedes limpiar la ficha, disminuir la velocidad con el boton '+Lento' y volver a rellenar la ficha.
 
-6.2 Por razone que desconozco el programa CARTERA acepta la fecha con facilidad pero anula sistematicamente la hora y la deja a 0:00:00.
+6.2 Por razones que desconozco el programa CARTERA acepta la fecha con facilidad pero anula sistematicamente la hora y la deja a 0:00:00.
 Esto es pesimo: sin la hora, las fichas introducidas seran ordenadas como a CARTERA le parezca. Pondra TRANSMISIONES delante de ADQUISICIONES, provocando un error a la hora de guardar el movimiento: IMPOSIBLE VENDER LO QUE NO TENIAS.
-La solucion que he encontrado es introducir fecha y hora, saltar de campo, volver a fecha y hora, limpiar, introducirla de nuevo. En mi trabajo --ya he introducido todos mis movimientos-- la segunda vez acepta la hora correctamente.
+La solucion que he encontrado es introducir fecha y hora, saltar de campo, retroceder a Fecha y Hora, limpiar, introducirla de nuevo. En mi trabajo --ya he introducido todos mis movimientos-- la segunda vez acepta la hora correctamente.
 Si en tu trabajo aun asi no acepta la hora, he puesto en tu CLIPBOARD la fecha y hora por lo que si limpias el campo y aplicas 'Ctrl V' tendras fecha y hora introducidas. Suerte
 
-
 6.3 Socorro: he apretado el boton 'introducir...' pero me he olvidado de abrir la ficha en CARTERA.... 
-No, no te dara tiempo a abrirla. Hay que abrirla antes y solo despues hacer clik en el boton 'INTRODUCIR' e ir al primer campo. 
+No, no te dara tiempo a abrirla. Hay que abrirla antes y solo despues hacer clik en el boton 'INTROD: Press+Raton 1er Box' e ir al primer campo. 
 Que hacer???? 
 Si llevas el  mouse al terreno del browser, AEC.CMD intentara introducir datos, abriendo ventanas inconvenientes. Pero si vas moviendo el mouse, en seguida para y aborta. Haz click en el browser y va moviendo el mouse.
 Si no has salido de la VENTANA DE DATOS todavia, no subas el mouse. Dirigelo por abajo hacia la derecha al maximo, al final sube hacia la VENTANA PERL, haz click, Ctrl C y el programa se parara. Aunque hagas clik en el boton introducir, mientras no penetres en el terreno del browser no introducira datos.
+
+6.4 Si deseas revisar que todos los movimientos han sido introducidos correctamente tienens dos botones utiles 'Busca>' y 'Total>'
+En el primero, introduciendo el ISIN o una parte de el y presionandolo te llevara a la 1a. operacion de ese ISIN. El segundo boton captara ese ISIN y hara un listado con todas las operaciones realizadas. Colocara fecha y hora, el numero de valores y el total de valores en tu posesion hasta ese momento. Si es un valor antiguo, del que poseias acciones a 31/12 pasado, introduciendo ese valor en el campo anexo 'TOTAL' lo tendra en cuenta en el sumatorio de acciones en tu posesion. Esto es muy util para revisar que todas las operaciones han sido introducidas y que el estado final es el mismo que consta en CARTERA.
+
 
 
 
