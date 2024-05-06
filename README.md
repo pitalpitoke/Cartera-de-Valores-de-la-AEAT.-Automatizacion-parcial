@@ -283,14 +283,11 @@ Si llevas el  mouse al terreno del browser, AEC.CMD intentara introducir datos, 
 Si no has salido de la VENTANA DE DATOS todavia, no subas el mouse. Dirigelo por abajo hacia la derecha al maximo, al final sube hacia la VENTANA PERL, haz click, Ctrl C y el programa se parara. Aunque hagas clik en el boton introducir, mientras no penetres en el terreno del browser no introducira datos.
 
 6.4 Si deseas revisar que todos los movimientos han sido introducidos correctamente tienens dos botones utiles 'Busca>' y 'Total>'
-En el primero, introduciendo el ISIN o una parte de el y presionandolo te llevara a la 1a. operacion de ese ISIN. El segundo boton captara ese ISIN y hara un listado con todas las operaciones realizadas. Colocara fecha y hora, el numero de valores y el total de valores en tu posesion hasta ese momento. Si es un valor antiguo, del que poseias acciones a 31/12 pasado, introduciendo ese valor en el campo anexo 'TOTAL' lo tendra en cuenta en el sumatorio de acciones en tu posesion. Esto es muy util para revisar que todas las operaciones han sido introducidas y que el estado final es el mismo que consta en CARTERA.
-
-
-
+En el primero, introduciendo el ISIN o una parte de el y presionandolo te llevara a la 1a. operacion de ese ISIN. El segundo boton captara ese ISIN y hara un listado con todas las operaciones realizadas. Colocara fecha y hora, el numero de valores y el total de valores en tu posesion hasta ese momento. Si es un valor antiguo, del que poseias acciones a 31/12 anterior, introduciendo ese valor en el campo anexo 'TOTAL' lo tendra en cuenta en el sumatorio de acciones en tu posesion. Esto es muy util para revisar que todas las operaciones han sido introducidas y que el estado final es el mismo que consta en CARTERA.
 
 7.0 DESINSTALACION
 
-Recuerdo que en realida el programa no se instala. Si no lo quieres mas, simplemente borra directorios que has creado (c:\p\ en nuestro ejemplo). En tu computador no quedara nada mas.
+El programa no se instala. Si no lo quieres simplemente borra directorios que has creado (c:\p\ en nuestro ejemplo). En tu computador no quedara nada mas.
 
 
 
@@ -302,36 +299,14 @@ Francisco A. Barrau
 
 pitalpitoke@gmail.com
 
-========================================
-
+#########
 
 Todos los derechos reservados a Francisco A Barrau
 
-Se prohibe distribuir, reproducir o modificar este programa sin autorizacion.
-
-Este programa no es FreeWare, no es gratuito.
-1) Este programa es "CafeWare": usalo cuanto quieras durante el 2022 pero por favor si te resulta util comprame un cafe: 
-
-2 euros (dos euros).
-
-(los programas que hago son mi unico gana-pan).
-
-Hazme un traspaso a mi cuenta en Openbank:
+Si deseas colaborar puedes hacerlo en mi cuenta Openbank:
 ES4200730100550656454041
-(si quieres ayudar mas, muchas gracias)
 
-No traspases NADA hasta que finalices tu trabajo. Si te ha resultado util, paga. Si no, no pagues.
-
-Y si tu situacion economica es mala, intentas ahorrar....
-no pagues. Si en el futuro mejora...
-
-2) Ademas te pido comentar en redes tu experiencia. Si muchos colaboran un poquito puedo sobrevivir y seguir programando.
-
-A todos los que colaboren y me comunique en mi email los datos del deposito les enviare las actualizaciones y mejoras.
-
-Ayudame a continuar programando y 'te ayudaras' en futuras declaraciones de la renta.
-
-Se admiten sugerencias o criticas. Tambien puedo adaptar los programas a tus necesidades.
+Ademas te pido comentar en redes tu experiencia. Tambien enviar via email bugs, problemas o sugerencias.
 
 Gracias.
 
