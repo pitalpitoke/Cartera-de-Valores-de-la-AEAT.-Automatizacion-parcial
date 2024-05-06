@@ -153,7 +153,7 @@ Observa la ventana de abajo, VENTANA DE DATOS:
 'INTROD: press+Raton 1er Box' 
 	Presionalo y delplaza el mouse para el 1er campo de la ficha. Abandona el mouse. AEC va a rellenar uno por uno los campos. Mas detalles abajo.
 
-'Prev Record'
+'Regis Previo'
   Retrocede al registro previo (si lo hubiere).
 
 'Introd ISIN y NOMBRE'
@@ -163,7 +163,7 @@ Observa la ventana de abajo, VENTANA DE DATOS:
   Si introduces una secuencia del ISIN que buscas y presionas saltara al primer registro de ese ISIN.
 
 '+Rapido' '+Lento'
-	Dependiendo de tu conexion, es importante acelerar o decelerar la velocidad con que AEC.CMD introduce los datos. Empezara un poco lento, por prudencia. Si te funciona bien en una ficha, acelera un poco para la proxima y verifica el resultado. Si te da algun problema (mete mal los datos), desacelera, limpia la ficha abierta en CARTERA e INTRODUCE de nuevo.
+	Es posible acelerar o decelerar la velocidad con que AEC.CMD introduce los datos. La conexion con la AEAT es un tanto variable. Si una velocidad funciona bien en una ficha puedes acelerar un poco para la proxima y verificar el resultado. Si te da algun problema (mete mal los datos), desacelera, limpia la ficha abierta en CARTERA e INTRODUCE de nuevo.
 
 'Ir al Registro >>'
 	Si colocas en el campo al lado el numero de registro al que quieres ir y presionas 'Ir al Registro', va directo a este registro.
