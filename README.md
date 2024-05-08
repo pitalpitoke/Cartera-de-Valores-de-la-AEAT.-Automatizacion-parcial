@@ -1,11 +1,13 @@
 # Cartera-de-Valores-de-la-AEAT.-Automatizacion-parcial
 Si deseas introducir numerosos movimientos en el programa SERVICIO CARTERA DE VALORES de la AEAT, quizas mi script te puede ayudar.
+Abajo de este readme encontraras las diversas versiones de este script. Estoy intentando mejorarlo, por lo que vale la pena bajarte la ultima version.
 
-El programa (AEC.CMD) esta basado en Perl. Usa el extracto en formato 'csv' (comma separated value) que puedes obter en tu aplicacion DEGIRO. Para otros brokers, favor contactarme.
+El programa (AEC.CMD) esta basado en Perl. Usa el extracto de tus operaciones en formato 'csv' (comma separated value) que puedes obter en tu aplicacion DEGIRO. Para otros brokers, favor contactarme. (pitalpitoke@gmail.com)
 
-Primeramente leera el archivo que tu le proporcionas, registro por registro. Los ordenara segun ISIN y dentro de ISIN por FECHA Y HORA. Cargados los datos de cada movimiento o registro es capaz de introducirlos en los respectivos campos de la ficha abierta en SERVICIO DE CARTERA DE VALORES (CARTERA), de la AEAT, de 2024 y algunos previos.
+Primeramente leera el archivo que tu le proporcionas, registro por registro. Los ordenara segun ISIN y dentro de ISIN por FECHA Y HORA. 
+Cargados los datos de cada movimiento o registro es capaz de introducirlos en los respectivos campos de la ficha abierta en SERVICIO DE CARTERA DE VALORES (CARTERA), de la AEAT, de 2024.
 
-AEC.CMD crea una ventana abajo (vease la fotografia anexa), muy alargada, donde te muestra los datos del registro que quieres introducir. Hay diversos botones de control para facilitar la introduccion del Registro, regular velocidad, desplazarse al proximo registro, etc.
+AEC.CMD crea una ventana abajo (vease la fotografia anexa), muy alargada, donde te muestra en letras grandes, los datos del registro que puedes introducir. Hay diversos botones de control para facilitar la introduccion del Registro, regular velocidad, cargar el proximo registro, el anterior, etc.
 
 
 Este Readme.md te informa de:
@@ -31,50 +33,37 @@ Si no quieres que PERL modifique tu computador, te aconsejo usar la version 'POR
 
 https://strawberryperl.com/releases.html
 
-Elije preferentemente la ultima version (5.38.2.2). Elige 32bit o 64bit segun tu computador (cuanto mas moderno, mas probable que sea 64bit).
+Elije preferentemente la ultima version (actualmente la 5.38.2.2). Elige 32bit o 64bit segun tu computador (cuanto mas moderno, mas probable que sea 64bit).
 
 1.2 MODULOS
 
 Debes crear un directorio nuevo (ejemplo C:\P\ o D:\PL\ o C:\PERL\). Es importante que este vacio. Dentro extrae todo el contenido del zip que has bajado que sera probablemente: strawberry-perl-5.38.2.2-64bit-portable.zip.
 
 Veras varios subdirectorios. Tu tienes que crear otro nuevo (C:\P\AE, por ejemplo).
-Coloca en este subdirectorio unicamente los archivos del programa aec.pl (aec7.pl, bat.cmd, bat2.cmd, findit,cmd, aec.cmd).
+Coloca en este subdirectorio unicamente los archivos del programa aec.pl (aec7.pl, bat.cmd, bat2.cmd, findit,cmd, aec.cmd, cpan.mod.cmd).
 
 Estando conectado con la web, abre el link que encontraras en la instalacion PERL, en el directorio raiz:
 
-portableshell.bat
+c:\p\portableshell.bat
 
 Se abrira una ventana parecida al de la CMD de windows. Es la VENTANA PERL.
-Necesitamos actualizar algunos paquetes de programas. Para ello entra en el programa oficial de actualizacion de Strawberry PERL tecleando:
+Necesitamos actualizar modulos de PERL. Para ello entra en el sudirectorio que has creado para AEC:
 
-CPAN<enter>
+CD AE<enter>
 
 Tu prompt pasa a ser:
 
-CPAN>
+Y aqui simplemente ejecuta el script cpan.mod.cmd. Esto instalara o actualizara los modulos que necesitamos:
 
-Aqui, pasando las respectivas ordenes, CPAN instalara o actualizara los modulos que el AEC.CMD necesita. (importante: respeta mayusculas o minusculas en las respectivas ordenes o se produciran errores). Hay que esperar a que cada paquete se instale y puede tardar un tanto. Para introducir cada orden usa las flechas vertical y horizontal y completa la orden, ahorras tiempo. Una vez instalada cada orden es util repetirla. Esta vez CPAN te avisara de que tu modulo esta actualizado.
-
-Cuando cada modulo esta listo, el prompt vuelve ser 'CPAN>'.
-
-Introduce una orden de instalacion y espera: 
-
-install Win32<enter>
-
-install Win32::GUI<enter>
-
-install Win32::GuiTest<enter>
-
-install Win32::Clipboard<enter>
-
-install Time::HiRes<enter>
-
+CPAN.MOD.CMD<ENTER>
 
 Si todo ha ido bien la instalacion de PERL ya esta completa.
 
-Para terminar y salir de CPAN introduce: 
+Para confirmarlo, repite el comando:
 
-exit<enter>
+CPAN.MOD.CMD
+
+Esta vez no hara otra cosa que avisar que los modulos estan actualizados.
 
 Y para cerrar la VENTANA PERL de nuevo:
 
