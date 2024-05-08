@@ -51,9 +51,7 @@ Necesitamos actualizar modulos de PERL. Para ello entra en el sudirectorio que h
 
 CD AE<enter>
 
-Tu prompt pasa a ser:
-
-Y aqui simplemente ejecuta el script cpan.mod.cmd. Esto instalara o actualizara los modulos que necesitamos:
+Y aqui ejecuta el script cpan.mod.cmd. Esto instalara o actualizara los modulos que necesitamos:
 
 CPAN.MOD.CMD<ENTER>
 
@@ -61,7 +59,7 @@ Si todo ha ido bien la instalacion de PERL ya esta completa.
 
 Para confirmarlo, repite el comando:
 
-CPAN.MOD.CMD
+CPAN.MOD.CMD<enter>
 
 Esta vez no hara otra cosa que avisar que los modulos estan actualizados.
 
@@ -90,7 +88,10 @@ Ya tienes los registros de todos tus movimientos. Por supuesto si lo necesitas p
 
 Pon este archivo (Transactions.csv) en el directorio donde esta el programa AEC.PL (en nuestro ejemplo c:\p\ae\).
 
-IMPORTANTE: el archivo, para ser reconocido tiene que llamarse 'deg.csv'. Renombra Transactions.csv para DEG.CSV.
+IMPORTANTE: el archivo, para ser reconocido tiene que llamarse 'deg.csv'. 
+
+copy Transactions.csv  DEG.CSV<enter>
+
 
 3.0 PUESTA EN MARCHA: VENTANAS
 
@@ -146,7 +147,7 @@ Observa la ventana de abajo, VENTANA DE DATOS:
   Retrocede al registro previo (si lo hubiere).
 
 'Introd ISIN y NOMBRE'
-	Introduce los dos valores en la ficha correspondiente del programa CARTERA.
+  Introduce los dos valores en la ficha correspondiente del programa CARTERA.
 
 'BUSCA'
   Si introduces una secuencia del ISIN que buscas y presionas saltara al primer registro de ese ISIN.
@@ -161,7 +162,7 @@ Observa la ventana de abajo, VENTANA DE DATOS:
 	El programa, al reiniciarse, va al registro 1. Con los botones puedes avanzar o retrocecer hasta el registro que quieres procesar.
 
 'TOTAL'
-  Si introduces el numero de acciones que tenias el 31/12 anterior te mostrara las adquisiciones o transmiones del valor en foco sus respectivos totales. Muy util para compararlos con los que tiene CARTERA DE VALORES. 
+  Si introduces en el campo de texto el numero de acciones que tenias el 31/12 anterior te mostrara las adquisiciones o transmiones del valor en foco y sus respectivos totales. Muy util para compararlos con los que tiene CARTERA DE VALORES y asi verificar si todas las operaciones han sido introducidas. 
 
 'SALIR'
 	Sale del programa.
@@ -171,31 +172,31 @@ Observa la ventana de abajo, VENTANA DE DATOS:
 
 En el texto principal (letras mayores) te aparecen los datos del Registro que vas a introducir:
 
--Reg 21: es la linea 21 del archivo generado DEG12.CSV
--Nombre del valor
--ISIN del valor
--A o T: Adquisicion de valores o Transmision
--Fecha y hora de la operacion
--1 o 2: Campo 'Clave de mercado' (segun sean operaciones en el mercado nacional o europeo)
--Cuando se trata de trasmision hay otro campo que sera rellenado, 'Clave de Origen'. 
--NUM: numero de valores que se adquieren o transmiten
--Tot: valor total de la operacion
--Unit: valor unitario de cada valor
--Gas: gastos de la operacion.
+'Reg 21': es la linea 21 del archivo generado DEG12.CSV
+'Nombre del valor'
+'ISIN del valor'
+'A' o 'T': Adquisicion de valores o Transmision
+Fecha y hora de la operacion
+'1' o '2': Campo 'Clave de mercado' (segun sean operaciones en el mercado nacional o europeo)
+Cuando se trata de trasmision hay otro campo que sera rellenado, 'Clave de Origen'. 
+'NUM' numero de valores que se adquieren o transmiten
+'Tot': valor total de la operacion
+'Unit': valor unitario de cada valor
+'Gas': gastos de la operacion.
 
 
-En la linea secundaria, arriba, en letra menor, aparecen los datos de Registro previo, la anterior ficha que el programa ha cargado. Es util para salir de dudas si no hemos saltado algun registro (en los intradias a veces te queda duda). La fecha y hora son vitales para no perderse.
+En la linea secundaria, arriba, en letra menor, aparecen los datos del Registro previo, la anterior ficha que el programa ha cargado. Es util para salir de dudas si no hemos saltado algun registro (en las operaciones intradias a veces te queda duda). La fecha y hora son vitales para no perderse.
 
 
 4.0 MODOS DE SALIR DEL PROGRAMA
 
-Para salir del programa lo ideal es hacer clik en el boton 'SALIR'.Esto es muy rapido. La VENTANA DE DATOS desaparece, pero la VENTANA PERL continua en su lugar.
+Para salir del programa lo ideal es hacer clik en el boton 'SALIR'. Esto es muy rapido. La VENTANA DE DATOS desaparece, pero la VENTANA PERL continua en su lugar.
 
-Tecleando (o, muy comodamente, con la flecha superior te vuelve aparecer la orden):
+Tecleando (o con la flecha superior te vuelve aparecer la orden):
 
 AEC.CMD<ENTER>
 
-Si la ejecutas, vuelve a cargarse la VENTANA DE DATOS, en el ultimo registro visualizado.
+Si la ejecutas, vuelve a cargarse la VENTANA DE DATOS, esta vez con el ultimo registro que estaba en pantalla.
 
 Tambien se puede salir desde la VENTANA PERL:
 
@@ -228,11 +229,10 @@ Localiza el valor que quieres introducir (ejemplo Pharmamar).
 
 5.1 Si el valor todavia no existe:
 
-5.1.1) Abre la ficha NUEVO VALOR. Tiene tres posibles campos (NIF,ISIN,NOMBRE) pero solo dos son necesarios -Degiro proporciona los dos ultimos. 
-5.1.2 Ve a VENTANA DATOS, haz clik en el boton 'Introd ISIN y NOMBRE'
-5.1.3 Vuelve a tu NAVEGADOR y lleva el mouse dentro del campo ISIN. No lo muevas mas. AEC.COM introducira sucesivamente el ISIN y NOMBRE. Y se PARARA.
-5.1.4 Verifica si esta correcto y aprieta GUARDAR en la ficha de CARTERA.
-5.1.5 Todavia en CARTERA presiona en AGRUPACIONES. Crea una e introduce el % que sea de tu propiedad.
+5.1.1 Abre la ficha NUEVO VALOR. Tiene tres posibles campos (NIF,ISIN,NOMBRE) pero solo dos son necesarios -Degiro proporciona los dos ultimos. 
+5.1.2 Ve a VENTANA DATOS, haz clik en el boton 'Introd ISIN y NOMBRE' y sube el mouse por el NAVEGADOR hasta el campo ISIN. No lo muevas mas. AEC.COM introducira sucesivamente el ISIN y NOMBRE. Y se PARARA.
+5.1.3 Verifica si esta correcto y haz click en GUARDAR en la ficha de CARTERA.
+5.1.4 Todavia en CARTERA presiona en AGRUPACIONES. Crea una e introduce el % que sea de tu propiedad.
 
 5.2 Si el valor ya existe o lo acabas de crear:
 
@@ -247,7 +247,7 @@ Localiza el valor que quieres introducir (ejemplo Pharmamar).
 	5.2.6.1.2 Si hay otros errores:
 	En CARTERA haz clik en 'limpiar'. Esto elimina los datos.
 	En la VENTANA DATOS disminuye la velocidad un poco con el boton '+Lento'
-	Ve al punto 5.2.4 para volver a introducir los datos de nuevo. Es bueno recordar que mientras no se ha presionado GUARDAR los posibles errores no quedan 	registrados en la AEAT.
+	Ve al punto 5.2.4 para volver a re-introducir los datos. (Recordemos que sin hacer click en GUARDAR los errores no quedan registrados en la AEAT).
       5.2.6.2 Si la ficha ha sido introducida correctamente:
   Salva esa ficha en el programa CARTERA haciendo clik en 'GUARDAR'
   CARTERA te devuelve a la primera ficha de la agrupacion que has abierto. Usa la tecla FIN para ir al final. Ahi debe estar la operacion que acabas de introducir.
